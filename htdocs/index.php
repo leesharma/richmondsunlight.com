@@ -148,7 +148,7 @@ if (!$blog_entries)
 	# Gather the headlines with SimplePie, our RSS library.
 	require_once('includes/simplepie.inc.php');
 	$feed = new SimplePie();
-	$feed->set_feed_url('http://www.richmondsunlight.com/blog/feed/');
+	$feed->set_feed_url('https://www.richmondsunlight.com/blog/feed/');
 	$feed->set_output_encoding('UTF-8');
 	$feed->init();
 	
