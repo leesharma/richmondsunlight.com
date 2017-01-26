@@ -6,6 +6,7 @@
 include_once('settings.inc.php');
 include_once('functions.inc.php');
 
+$log = new Log;
 
 $sources = array(
 			'house' => 'http://virginia-house.granicus.com/VPodcast.php?view_id=3',
@@ -136,7 +137,9 @@ foreach ($sources as $chamber => $url)
 			curl_exec($ch); 
 			curl_close($ch);
 			fclose($fp);
-			echo '<p>Saved ' . $filename . '</p>';
+
+			$log->put('Action required: Found and stored new ' . ucfirst($chamber)
+					. ' video, for ' . $date . '.', 3);
 
 		}
 
