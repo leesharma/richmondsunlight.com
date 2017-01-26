@@ -17,9 +17,9 @@
 	# INCLUDES
 	# Include any files or libraries that are necessary for this specific
 	# page to function.
-	require_once('includes/functions.inc.php');
-	require_once('includes/settings.inc.php');
-	require_once 'includes/phpmailer/class.phpmailer.php';
+	require_once('functions.inc.php');
+	require_once('settings.inc.php');
+	require_once('phpmailer/class.phpmailer.php');
 	
 	# DECLARATIVE FUNCTIONS
 	# Run those functions that are necessary prior to loading this specific
